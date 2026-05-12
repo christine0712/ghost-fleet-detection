@@ -1,0 +1,47 @@
+[
+  {
+    "mmsi": "244710000",
+    "name": "MSC Oscar",
+    "flag": "Panama",
+    "type": "Container Ship",
+    "lat": 43.29,
+    "lon": -5.36,
+    "speed": 0.0,
+    "risk_score": 0.95,
+    "risk_level": "HIGH",
+    "anomalies": ["AIS Disabled", "Position Mismatch"],
+    "predicted_destination": "Rotterdam",
+    "ofac_status": true,
+    "trajectory": [[43.1, -5.2], [43.2, -5.3], [43.29, -5.36]]
+  },
+  {
+    "mmsi": "244710001",
+    "name": "Ghost Tanker",
+    "flag": "Liberia",
+    "type": "Tanker",
+    "lat": 35.5,
+    "lon": 23.1,
+    "speed": 12.5,
+    "risk_score": 0.78,
+    "risk_level": "HIGH",
+    "anomalies": ["Fake Flag", "Course Anomaly"],
+    "predicted_destination": "Bandar Abbas",
+    "ofac_status": true,
+    "trajectory": [[35.1, 22.8], [35.3, 23.0], [35.5, 23.1]]
+  },
+  {
+    "mmsi": "244710002",
+    "name": "CMA CGM Paris",
+    "flag": "France",
+    "type": "Container Ship",
+    "lat": 48.5,
+    "lon": 2.3,
+    "speed": 18.0,
+    "risk_score": 0.12,
+    "risk_level": "LOW",
+    "anomalies": [],
+    "predicted_destination": "Le Havre",
+    "ofac_status": false,
+    "trajectory": [[48.1, 2.0], [48.3, 2.1], [48.5, 2.3]]
+  }
+]
