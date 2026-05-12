@@ -1,0 +1,19 @@
+# Data Engineering (Person 1)
+pandas==2.2.0
+numpy==1.26.0
+requests==2.31.0
+
+# Data Science (Person 2)
+scikit-learn==1.4.0
+folium==0.15.0
+matplotlib==3.8.0
+seaborn==0.13.0
+
+# Geo & Maritime
+geopy==2.4.1
+shapely==2.0.3
+
+# Export & Utils
+json5==0.9.14
+python-dotenv==1.0.0
+tqdm==4.66.0
