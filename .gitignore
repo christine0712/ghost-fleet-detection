@@ -1,0 +1,17 @@
+# Données brutes
+*.csv
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+.env
+venv/
+*.pyc
+
+# Mac
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
