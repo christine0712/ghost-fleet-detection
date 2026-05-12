@@ -1,4 +1,20 @@
 # Données brutes
+data/raw/
+
+# Python
+__pycache__/
+.env
+venv/
+*.pyc
+
+# Mac
+.DS_Store
+
+# IDE
+.vscode/
+.idea/# Exceptions Person 1
+!data/processed/*.json
+!data/*.csv# Données brutes
 *.csv
 data/raw/
 data/processed/

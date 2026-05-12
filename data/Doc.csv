@@ -1,0 +1,48 @@
+Column Name,Description,Join Key?
+anomaly_id,Unique identifier for anomaly (e.g. ANM001),NO
+mmsi,Maritime Mobile Service Identity - ship unique identifier,YES
+type,Anomaly type: ais_disabled / flag_mismatch / spoofing / position_jump / name_change,NO
+description,Human-readable anomaly description,NO
+timestamp,When anomaly was detected (ISO format),NO
+confidence,Detection confidence score (0.0-1.0),NO
+source,Detection source: manual / automated / intel,NO
+
+signature_id,Unique ID for radio emission (e.g. SIG001),NO
+mmsi,Maritime Mobile Service Identity - ship unique identifier,YES
+frequency,Radio frequency in MHz (e.g. 156.8),NO
+bandwidth,Signal bandwidth in kHz,NO
+modulation,Modulation type: FM / AM / SSB / FSK,NO
+power,Transmission power in dBm,NO
+timestamp,When signal was detected (ISO format),NO
+location_lat,Radio signal detected at latitude,NO
+location_lon,Radio signal detected at longitude,NO
+signal_strength,Signal strength in dBm,NO
+noise_level,Background noise in dBm,NO
+pulse_pattern,Unique pulse pattern ID (e.g. PP_001),NO
+signal_to_noise_ratio,SNR value - higher means clearer signal,NO
+
+mmsi,Maritime Mobile Service Identity - ship unique identifier,YES
+timestamp,AIS position report time (ISO format),NO
+latitude,Declared position latitude,NO
+longitude,Declared position longitude,NO
+speed,Speed over ground in knots,NO
+course,Course over ground in degrees (0-360),NO
+status,Vessel status: underway / anchored / moored / aground,NO
+ais_active,Is AIS transmitter on? (True/False),NO
+navigational_status,IMO navigation status code (0-15),NO
+heading,Magnetic heading in degrees,NO
+rot,Rate of turn in degrees per minute,NO
+
+mmsi,Maritime Mobile Service Identity - ship unique identifier (PRIMARY KEY),YES
+name,Vessel name (e.g. GRACE OCEAN STAR),NO
+imo,International Maritime Organization number,NO
+type,Ship type: Tanker / Cargo / Fishing / Tug,NO
+flag,Flag country (2-letter code: PA / LR / KR / SG),NO
+length,Vessel length in meters,NO
+width,Vessel width (beam) in meters,NO
+destination,Last declared destination port,NO
+last_ais_update,Timestamp of last AIS report (ISO format),NO
+historical_names,Pipe-separated previous vessel names (NAME1|NAME2|NAME3),NO
+is_suspicious,Pre-flagged as suspicious (True/False),NO
+year_built,Ship construction year,NO
+gross_tonnage,Ship tonnage in tons,NO
